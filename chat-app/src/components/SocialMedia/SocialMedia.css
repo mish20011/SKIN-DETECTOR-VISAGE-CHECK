@@ -1,0 +1,44 @@
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.linkdin-icon, .github-icon {
+  display: inline-block;
+  padding: 10px;
+}
+
+.linkdin-logo {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s;
+}
+
+.github-logo, .github-logo-dark {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s;
+}
+
+.linkdin-icon:hover .linkdin-logo,
+.github-icon:hover .github-logo {
+  transform: scale(1.1);
+}
+
+.linkdin-light .linkdin-logo {
+  filter: invert(0%);
+}
+
+.github-light .github-logo {
+  filter: invert(0%);
+}
+
+.linkdin-dark .linkdin-logo {
+  filter: invert(1);
+}
+
+.github-dark .github-logo-dark {
+  filter: invert(1);
+}

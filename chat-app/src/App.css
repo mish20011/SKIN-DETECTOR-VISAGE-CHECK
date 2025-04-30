@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.App-Light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.App-Dark {
+  background-color: #121212;
+  color: white;
+}
+
+.mode-Light, .mode-Dark {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mode-Light {
+  background-image: url('./components/images/moon.jpg');
+}
+
+.mode-Dark {
+  background-image: url('./components/images/sun.jpg');
+}
+
+.app-login-LoggedIn,
+.app-login-Login {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+.app-login-LoggedIn {
+  background-color: lightblue;
+}
+
+.social-media-Dark,
+.social-media-Light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.app-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.social-media-Dark,
+.social-media-Light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+  background-color: #121212; /* or white for Light mode */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.main-content {
+  padding-top: 100px; /* to account for fixed header height */
+}
+
+
+

@@ -1,0 +1,80 @@
+/* Parent Container */
+/* Header Text Styles */
+.header-Light {
+  color: black !important;
+  font-weight: bold;
+}
+
+
+.header-Dark {
+  color: white;
+  font-weight: bold;
+}
+
+/* Header Alignment (if required) */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Adjust based on your requirements */
+}
+
+.c-buzzwords {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:25px; /* Space between words */
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  height: 70px; /* Set height here */
+}
+
+
+
+/* Word Styling */
+.c-buzzwords__word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -1px; /* Close letters in each word */
+}
+
+.c-buzzwords__char {
+  text-shadow: -20px 10px 10px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  font-size: 50px; /* Keep consistent with overall font size */
+  transform-origin: 50% 100%;
+  color: #fff;
+  will-change: text-shadow, transform;
+  letter-spacing: 0px; /* Adjust this value: decrease to reduce space, increase for more */
+}
+
+
+/* Letter Styling */
+.c-buzzwords__charWrapper {
+  transition: none; /* No default animations */
+}
+
+/* Jumping Animation */
+.jumpingLetter {
+  animation: shrinkJump 1.5s alternate forwards cubic-bezier(.175,.885,.32,1.275);
+}
+
+@keyframes shrinkJump {
+  0% {
+    transform: scaleY(1); /* Normal size */
+  }
+  25% {
+    transform: scaleY(0.5); /* Shrink vertically */
+  }
+  50% {
+    transform: scaleY(1) translateY(-20px); /* Jump up */
+  }
+  75% {
+    transform: scaleY(0.5); /* Shrink vertically on the way down */
+  }
+  100% {
+    transform: scaleY(1) translateY(0); /* Back to normal */
+  }
+}

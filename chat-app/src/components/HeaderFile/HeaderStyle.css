@@ -1,0 +1,133 @@
+*{
+    margin:0;
+}
+/* Header Text Styles */
+.header-Light {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .header-Dark {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Header Alignment (if required) */
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust based on your requirements */
+  }
+  
+.social-media-Light{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    }
+.social-media-Dark{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.right-items{
+    margin-top: auto;
+    margin-bottom: auto;
+    flex:1;
+    text-align: right;
+}
+.center-items{
+    font-size: calc(0.9vw + 0.9vh);
+    width: 100%;
+    margin-left: 10px;
+    flex:1;
+    text-align: center;
+}
+.left-items{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    flex:1;
+    margin-right: 10px;
+}
+.linkdin-Dark{
+    text-decoration: none;
+    color: white;
+    padding-right: 5px;
+}
+.instagram-Dark{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-left:4px;
+}
+.github-Dark{
+    text-decoration: none;
+    color: white;
+    padding-right: 4px;
+}
+.gmail-Dark{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    padding-top: 2px;
+}
+.linkdin-Light{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+.instagram-Light{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-left:4px;
+}
+.github-Light{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+.gmail-Light{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    padding-top: 2px;
+}
+.insta-logo{
+    width: 30px;
+    height: 30px;
+}
+.google-logo{
+    width: 30px;
+    height: 30px;
+}
+.github-logo{
+    width: 30px;
+    height: 30px;
+}
+.linkdin-logo{
+    width: 30px;
+    height: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.github-logo-dark{
+    width: 40px;
+    height: 30px;
+}
